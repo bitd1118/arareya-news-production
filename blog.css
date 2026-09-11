@@ -1,0 +1,628 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.blog_h1{
+	font-size: 30px; 
+	line-height: 45px;
+	font-family:"ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "Sawarabi Mincho", serif;
+	font-weight: normal;
+	padding-bottom: 0px;
+	margin-top: 50px;
+	margin-bottom: 5px;
+    font-feature-settings: "palt";
+    letter-spacing: 0.08em;
+}
+.blog_date{
+	font-size: 15px; 
+	font-family:"ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "Sawarabi Mincho", serif;
+	font-weight: normal;
+	border-bottom: 1px solid #000;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+}
+.blog_h2{
+	font-size: 18px; 
+	line-height: 33px;
+	font-family:"ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "Sawarabi Mincho", serif;
+	font-weight: normal;
+	border-bottom: 5px solid #d18f2a;
+	background-color:#fde9d2;
+	padding: 8px;
+	text-decoration:none;
+	color:#000;
+	display:block;
+}
+.blog_h2:hover{
+	color:#fbd8b5;
+	background-color:#fdf2e5;
+}
+.blog_h2_2{
+	font-size: 22px; 
+	line-height: 36px;
+	font-family:"ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "Sawarabi Mincho", serif;
+	font-weight: normal;
+	border-bottom: 5px solid #d18f2a;
+	background-color:#fde9d2;
+	padding: 5px 10px 5px 10px;
+	text-decoration:none;
+	color:#000;
+	display:block;
+}
+.blog_h3{
+	font-size: 16px; 
+	line-height: 33px;
+	font-family:"ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", serif;
+	font-weight: normal;
+	background-color:#e6e6e6;
+	padding: 3px 0px 3px 3px;
+	margin-bottom: 30px;	  
+}
+.blog_h3_2{
+	font-size: 16px; 
+	line-height: 33px;
+	font-family:"ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "Sawarabi Mincho", serif;
+	font-weight: normal;
+	background-color:#e6e6e6;
+	padding: 3px 0px 3px 3px;
+	margin-bottom: 15px;	  
+}
+.blog_h4{
+	font-family:'HonMinSink-Book JIS2004',serif;
+	font-style:normal;
+	font-weight:400;
+	margin-bottom:10px;
+	margin-top:0;
+	font-size:16px;
+	line-height:32px;
+	padding-top:0px;
+}
+.blog_h5{
+	font-size: 30px; 
+	line-height: 45px;
+	font-family:"ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "Sawarabi Mincho", serif;
+	font-weight: normal;
+	border-bottom: 1px solid #000;
+	padding-bottom: 5px;
+	margin-top: -10px;
+	margin-bottom: 20px;	  
+}
+.top_visual_pc{
+	position: relative;
+	margin-top:0px;
+}
+.top_visual_pc img{
+	width: 100%;
+}
+.top_visual_pc_title{
+	font-size: 2vw;
+	letter-spacing: 0.15em;
+	font-family: "ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "Sawarabi Mincho", serif;
+	font-weight: normal;
+	line-height: 140%;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%,0%);
+	margin: 0;
+	padding: 0;
+	writing-mode: vertical-rl;
+	color: #FFF;
+	text-shadow: 0px 0px 20px #000000, 0px 0px 40px #000000;
+	position: absolute;
+}
+.blog_kiji_wrap{
+}
+.blog_section__title{
+	width: 100%;
+	word-break: normal;
+	overflow-wrap: break-word;
+	font-family: "ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "Sawarabi Mincho", serif;
+	font-style:normal;
+	font-weight:400;
+	margin-bottom:20px;
+	margin-top:0;
+	font-size:16px;
+	line-height:32px;
+	padding-top:0px;
+    font-feature-settings: "palt";
+    letter-spacing: 0.08em;
+}
+.blog_itokuzu{
+	margin:0 auto;
+	text-align:center;
+	text-decoration: none;
+	font-size: 14px; 
+	font-family:"ＭＳ ゴシック",sans-serif;
+	font-weight: normal;
+	color:#000;
+	margin-top:40px;
+}
+.blog_itokuzu-font{
+	text-decoration: none;
+	font-size: 14px; 
+	font-family:"ＭＳ ゴシック",sans-serif;
+	font-weight: normal;
+	color:#000;
+}
+.blog_itokuzu-font:hover{
+	color:#fbd8b5;
+}
+.blog_wrap{
+	margin: 0 auto;
+	text-align:center;
+}
+.blog_wrap1{
+	margin: 0 auto;
+	text-align:center;
+	width: 250px;
+	height: auto;
+	margin-right: 20px;
+	display:inline-block;
+}
+.blog_text_pc_font{
+	margin: 0 auto;
+	text-align:center;
+	text-decoration: none;
+	font-size:12px; 
+	line-height: 27px;
+	font-family:"ＭＳ ゴシック",sans-serif; 
+	font-weight: normal; 
+	color:#000;  
+}
+.blog_text_pc_font:hover{
+	color:#fbd8b5;  
+}
+.blog_wrap2{
+	width: 100%;
+	height: auto;
+	margin-top:5px;
+	margin-bottom:15px;
+}
+.blog_p1{
+	width: 400px;
+	height: auto;
+	float:left;
+}
+/*.blog_p10{
+	width: 400px;
+	height: auto;
+}*/
+.blog_p2{
+	width: 400px;
+	height: auto;
+	float:right;
+}
+.blog_p1_2{
+	width: auto;
+	height: auto;
+	float:left;
+}
+.blog_p2_2{
+	width: auto;
+	height: auto;
+}
+.blog_p3{
+	width: 100%;
+	height: auto;
+}
+.blog_p4{
+	width: 260px;
+	height: auto;
+	margin-right:10px;
+	float:left;
+}
+.blog_p5{
+	width: 260px;
+	height: auto;
+	float:left;
+}
+.blog_p6{
+	width: 260px;
+	height: auto;
+	margin-left:10px;
+	float:left;
+}
+.blog_p7{
+	width: 800px;
+	height: auto;
+}
+#blog-wrap_pc7{
+	width: 810px;   
+	height: auto;
+	min-height: 350px;
+	margin: 0 auto;	
+	margin-left: 400px;
+	margin-bottom:100px;
+	margin-top:-50px;		  
+}
+.blog-wrap_pc7{
+	width: 810px;   
+	height: auto;
+	min-height: 350px;
+	margin: 0 auto;	
+	margin-left: 400px;
+	margin-bottom:100px;
+	margin-top:-50px;		  
+}
+#blog-wrap_pc8{
+	width: 810px;   
+	height: auto;
+	margin: 0 auto;	
+	margin-left: 400px;
+	margin-bottom:100px;
+	margin-top:10px;		  
+}
+.blog-wrap_pc8{
+	width: 810px;   
+	height: auto;
+	margin: 0 auto;	
+	margin-left: 400px;
+	margin-bottom:100px;
+	margin-top:10px;		  
+}
+.blog_p9{
+	width: 100%;
+	height: auto;
+}
+.blog_p10{
+	width: 245px;
+	height: auto;
+}
+.link_p{
+	text-decoration:none;
+	color: #000;
+}
+
+/*! #######################################################################
+	ブログページネーション始まり
+####################################################################### */
+.nav-links{
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	margin: 0 auto;
+	text-align: center;
+	margin-top:-50px;
+	margin-bottom: 75px;
+	margin-left:400px;
+}
+.nav-links .page-numbers{
+	margin-right: 10px;
+	padding: 7px 10px;
+	color: #707070;
+	border: #707070 solid 1px;
+	background: #fff;
+	text-decoration:none;
+}
+.nav-links .page-numbers:hover{
+	background: #fde9d2;
+}
+
+.nav-links .dots{
+	background: transparent;
+	box-shadow:none;
+	border: none;
+	border: #fff solid 1px;
+}
+.nav-links .dots:hover{
+	border: none;
+	background: #fff;
+}
+.nav-links .current{
+	padding: 7px 10px;
+	background: #d18f2a;
+	color: #fff;
+	text-decoration:none;
+}
+.nav-links .current:hover{
+	padding: 7px 10px;
+	background: #d18f2a;
+	color: #fff;
+}
+.nav-links .next{
+	padding: 7px 10px;
+	background: transparent;
+	color: #707070;
+	text-decoration:none;
+}
+.nav-links .prev{
+	padding: 7px 10px;
+	background: transparent;
+	color: #707070;
+	text-decoration:none;
+}
+
+@media screen and (max-width: 1250px){
+    .nav-links .current {
+        padding: 5px 8px;
+    }
+
+    .nav-links .page-numbers {
+        margin-right: 4px;
+        padding: 5px 8px;
+    }
+
+    .nav-links .prev {
+        padding: 5px 8px;
+    }
+
+    .nav-links .next {
+        padding: 5px 8px;
+    }
+}
+
+/*! #######################################################################
+	ブログページネーション終わり
+####################################################################### */
+
+
+/*! #######################################################################
+	PC専用始まり
+####################################################################### */
+@media screen and (min-width: 1251px){
+.top_visual_sp{
+	display:none;
+}
+.top_visual_sp_20260608{
+	display:none;
+}
+.table3x2_sp{
+	display: none;
+}
+.table3x2_pc{
+	width: 100%;
+}
+.table3x2_pc_tr{
+	padding-right: 10px;
+}
+.table3x2_pc_td{
+	padding-right: 10px;
+	font-size: 14px;
+	line-height: 21px;
+}
+
+}
+/*! #######################################################################
+	PC専用終わり
+####################################################################### */
+
+/*! #######################################################################
+	SP専用始まり
+####################################################################### */
+@media screen and (max-width:1250px){
+.table3x2_pc{
+	display: none;
+}
+#blog-wrap_pc7{
+	width: 90%;   
+	height: auto;
+	margin: 0 auto;	
+  	margin-top: 50px;
+	margin-bottom: 50px;
+	max-width: 500px;
+}
+.blog-wrap_pc7{
+	width: 90%;   
+	height: auto;
+	margin: 0 auto;	
+  	margin-top: 50px;
+	margin-bottom: 50px;
+	max-width: 500px;
+}
+#blog-wrap_pc8{
+	width: 90%;   
+	height: auto;
+	margin: 0 auto;	
+  	margin-top: 50px;
+	margin-bottom: 50px;
+	max-width: 500px;
+}
+.blog-wrap_pc8{
+	width: 90%;   
+	height: auto;
+	margin: 0 auto;	
+  	margin-top: 50px;
+	margin-bottom: 50px;
+	max-width: 500px;
+}
+.blog_itokuzu-font{
+	font-size: 12px; 
+}
+.top_visual_pc{
+	display:none;
+}
+.top_visual_sp{
+	position: relative;
+	margin-top:34px;
+}
+.top_visual_sp img{
+	width: 100%;
+	z-index: 1;
+} 
+.top_visual_sp_20260608{
+	position: relative;
+	margin-top:34px;
+}  
+.top_visual_sp_20260608 img{
+	width: 100%;
+	z-index: 1;
+}
+.top_visual_sp_title{
+	font-size: 3.5vw; 
+	letter-spacing: 0.15em;
+	font-family:"ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "Sawarabi Mincho", serif;
+	font-weight: normal;
+	line-height: 140%;
+	top:20%;
+	left:50%;
+  	transform: translate(-50%,0%);
+  	margin:0;
+  	padding:0;
+	writing-mode: vertical-rl;	
+	color:#FFF;
+	text-shadow: 0px 0px 20px #000000, 0px 0px 40px #000000;
+	position: absolute;  
+}
+.blog_h1{
+	font-size: 20px; 
+	line-height: 30px;
+	margin-top: 50px;
+	margin-bottom: 5px;	  
+}
+.blog_date{
+	font-size: 10px; 
+	padding-top: 3px;
+	padding-bottom: 10px;
+	margin-bottom: 20px;  
+}
+.blog_h2{
+	font-size: 15px; 
+	line-height: 21px;
+	border-bottom: 3px solid #d18f2a;	
+}
+.blog_h2_2{
+	font-size: 15px; 
+	line-height: 18px;
+	border-bottom: 3px solid #d18f2a;	
+}
+.blog_h3{
+	font-size: 12px; 
+	line-height: 22px;
+	padding: 2px;
+	margin-bottom: 30px;	  
+}
+.blog_h3_2{
+	font-size: 12px; 
+	line-height: 22px;
+	padding: 2px;
+	margin-bottom: 30px;	  
+}
+.blog_h4{
+	margin-bottom:10px;
+	font-size:12px;
+	line-height:18px;
+}
+.blog_section__title{
+	font-family: "ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "Sawarabi Mincho", serif;
+	font-style:normal;
+	font-weight:400;
+	margin-bottom:20px;
+	margin-top:0;
+	font-size:12px;
+	line-height:24px;
+	padding-top:0px;
+}
+.blog_p1{
+	width: 100%;
+	height: auto;
+	margin:10px 0px 10px 0px;
+	text-align:center;
+}
+.blog_p10{
+	width: 100%;
+	height: auto;
+	margin:10px 0px 10px 0px;
+	text-align:center;
+}
+.blog_p2{
+	width: 100%;
+	height: auto;
+	margin:10px 0px 10px 0px;
+	text-align:center;
+}
+.blog_p1_2{
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	text-align:center;
+}
+.blog_p2_2{
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	text-align:center;
+}
+.blog_p3{
+	width: 100%;
+	height: auto;
+	margin:10px 0px 10px 0px;
+}
+.blog_p4{
+	width: 100%;
+	height: auto;
+	margin:10px 0px 10px 0px;
+	text-align:center;
+}
+.blog_p5{
+	width: 100%;
+	height: auto;
+	margin:10px 0px 10px 0px;
+	text-align:center;
+}
+.blog_p6{
+	width: 100%;
+	height: auto;
+	margin:10px 0px 10px 0px;
+	text-align:center;
+}
+.blog_p7{
+	width: 100%;
+	height: auto;
+	margin:10px 0px 10px 0px;
+	text-align:center;
+}
+.nav-links{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+}
+/*! #######################################################################
+	SP専用終わり
+####################################################################### */
+
+
+.link1{
+  text-decoration: none;
+}
+
+.link1:hover {
+  color:#ed6c00;
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.link1:visited {
+  color:#ed6c00;
+  text-decoration: none;
+}
+
+
+/*! #######################################################################
+	20260904追加はじまり
+####################################################################### */
+
+/* リンクをブロック化して枠いっぱいに広げる設定 */
+.table3x2_pc_tr a.link_p {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+.orange_bold_text{
+	color: #ed6c00;
+	line-height: 1.5;
+	font-size: 18px;
+	font-weight: 900;
+	font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Osaka, 'MS Pゴシック', 'MS PGothic', sans-serif;
+}
+
+.red_12px_text{
+    color:red;
+    font-size:12px;
+}
+
+/*! #######################################################################
+	20260904追加終わり
+####################################################################### */

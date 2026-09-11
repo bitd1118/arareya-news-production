@@ -1,0 +1,42 @@
+name: Deploy to Production (shopserve)
+
+on:
+  push:
+    branches:
+      - main # メインブランチ（※masterの場合は master に変更）
+  repository_dispatch:
+    types: [microcms] # microCMSからのWeb hook起動用
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm ci || npm install
+
+      # 1. 静的ファイルのビルド生成 (distフォルダに出力)
+      - name: Build site
+        env:
+          MICROCMS_SERVICE_DOMAIN: ${{ secrets.MICROCMS_SERVICE_DOMAIN }}
+          MICROCMS_API_KEY: ${{ secrets.MICROCMS_API_KEY }}
+          SITE_URL: ${{ secrets.SITE_URL }}
+        run: npm run build
+
+      # 2. ショップサーブ（FTP）へ生成ファイル(dist)をアップロード
+      - name: FTP Deploy to Shopserve
+        uses: SamKirsch/ftp-deploy-action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./dist/
+          server-dir: ./ # ショップサーブ上の配置フォルダ（※必要に応じて調整）

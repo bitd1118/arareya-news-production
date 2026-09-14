@@ -217,6 +217,7 @@ async function build() {
   let indexHtml = fs.readFileSync(path.join(TEMPLATE_DIR, 'index.template.html'), 'utf8');
   indexHtml = replaceOnce(indexHtml, '<!-- MICROCMS_NEWS_TOP -->', createTopNews(news));
   fs.writeFileSync(path.join(DIST_DIR, 'index.html'), indexHtml);
+  fs.writeFileSync(path.join(DIST_DIR, 'index.htm'), indexHtml);
 
   // お知らせ一覧ページ（20件/ページ）
   const pageCount = Math.max(1, Math.ceil(news.length / PER_PAGE));

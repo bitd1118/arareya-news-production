@@ -3,9 +3,10 @@ name: Deploy to Production (shopserve)
 on:
   push:
     branches:
-      - main # メインブランチ（※masterの場合は master に変更）
+      - main
   repository_dispatch:
-    types: [microcms] # microCMSからのWeb hook起動用
+    types: [microcms] # microCMS側のevent_typeも「microcms」に設定します
+  workflow_dispatch:   # ← これを追加（画面から手動実行できるようになります）
 
 jobs:
   build-and-deploy:
@@ -18,7 +19,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
 
       - name: Install dependencies
         run: npm ci || npm install
@@ -33,10 +34,10 @@ jobs:
 
       # 2. ショップサーブ（FTP）へ生成ファイル(dist)をアップロード
       - name: FTP Deploy to Shopserve
-        uses: SamKirkland/ftp-deploy-action@v4.3.5
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./dist/
-          server-dir: ./ # ショップサーブ上の配置フォルダ（※必要に応じて調整）
+          server-dir: ${{ secrets.FTP_SERVER_DIR }} # Secretsで柔軟に変更できるように設定

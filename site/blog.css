@@ -572,9 +572,12 @@
 	text-align:center;
 }
 .nav-links{
-	margin-top: 0px;
+	/*margin-top: 0px;
 	margin-bottom: 0px;
-	margin-left: 0px;
+	margin-left: 0px;*/
+    margin: 0 auto;
+    width: 90%;
+    line-height: 2.5;
 }
 }
 /*! #######################################################################

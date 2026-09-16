@@ -191,7 +191,7 @@ function createDetailHtml(template, article, index, news) {
     .replaceAll('%%OG_IMAGE%%', escapeHtml(ogImage))
     .replaceAll('%%CATEGORY%%', category)
     .replaceAll('%%DATE_DOT%%', escapeHtml(formatDateDot(article.date)))
-    .replaceAll('%%BODY%%', article.body || '')
+    .replaceAll('%%BODY%%', `${article.body || ''}${article.html || ''}`)
     .replaceAll('%%PREV_LINK%%', prevLink)
     .replaceAll('%%NEXT_LINK%%', nextLink);
 }

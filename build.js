@@ -140,25 +140,48 @@ function createPagination(page, pageCount) {
   const links = [];
   const pageFile = n => n === 1 ? 'blog_top.html' : `blog_top${n}.html`;
 
+  // 前のページ
   if (page > 1) {
     links.push(`<a class="prev page-numbers" href="${pageFile(page - 1)}">＜</a>`);
   }
 
-  for (let n = 1; n <= pageCount; n++) {
-    if (pageCount > 7 && n !== 1 && n !== pageCount && Math.abs(n - page) > 1) {
-      if (links[links.length - 1] !== '<span class="page-numbers dots">…</span>') {
-        links.push('<span class="page-numbers dots">…</span>');
-      }
-      continue;
+  // 表示するページ番号を決定
+  const pages = new Set();
+
+  pages.add(1);
+  pages.add(pageCount);
+
+  pages.add(page - 1);
+  pages.add(page);
+  pages.add(page + 1);
+
+  const validPages = [...pages]
+    .filter(n => n >= 1 && n <= pageCount)
+    .sort((a, b) => a - b);
+
+  let previousPage = 0;
+
+  for (const n of validPages) {
+
+    // ページ番号が飛んでいる場合は「…」を表示
+    if (previousPage && n - previousPage > 1) {
+      links.push('<span class="page-numbers dots">…</span>');
     }
 
     if (n === page) {
-      links.push(`<span aria-current="page" class="page-numbers current">${n}</span>`);
+      links.push(
+        `<span aria-current="page" class="page-numbers current">${n}</span>`
+      );
     } else {
-      links.push(`<a class="page-numbers" href="${pageFile(n)}">${n}</a>`);
+      links.push(
+        `<a class="page-numbers" href="${pageFile(n)}">${n}</a>`
+      );
     }
+
+    previousPage = n;
   }
 
+  // 次のページ
   if (page < pageCount) {
     links.push(`<a class="next page-numbers" href="${pageFile(page + 1)}">＞</a>`);
   }

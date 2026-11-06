@@ -1,4 +1,4 @@
-# microCMS + 静的HTML構成（あられの匠 白木向け）
+# microCMS + 静的HTML構成（あられの匠 白木本サイト向け）
 
 ## 1. microCMSのAPI
 

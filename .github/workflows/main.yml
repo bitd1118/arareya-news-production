@@ -32,7 +32,7 @@ jobs:
           SITE_URL: ${{ secrets.SITE_URL }}
         run: npm run build
 
-      # 2. ショップサーブ（FTP）へ生成ファイル(dist)をアップロード
+       # 2. ショップサーブ（FTP）へ生成ファイル(dist)をアップロード
       - name: FTP Deploy to Shopserve
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
@@ -40,4 +40,14 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./dist/
-          server-dir: ${{ secrets.FTP_SERVER_DIR }} # Secretsで柔軟に変更できるように設定
+          server-dir: ${{ secrets.FTP_SERVER_DIR }}
+
+          # アップロード対象から除外
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            blog.css
+            header_ng.css
+            **/blog.css
+            **/header_ng.css
